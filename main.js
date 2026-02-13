@@ -26,6 +26,10 @@ function changeLanguage(lang) {
       var key = $(this).data("i18n");
       $(this).text(data[key]);
     });
+    $("[data-i18n]").each(function() {
+      var key = $(this).data("i18n-title");
+      $(this).attr('title',data[key]);
+    });
     localStorage.setItem("selectedLang", lang);
     $('body').attr('lang', localStorage.getItem("selectedLang"));
   });
