@@ -1,4 +1,7 @@
 {
   "welcome_title": "Welcome to my site",
-  "description": "This is a static page on GitHub."
+  "description": "This is a static page on GitHub.",
+  "truesight_small":"(Custom Tooltip System)",
+  "skinwalker_small":"(Account Switcher System)",
+  "huntersmark_small":"(Thread Tagging System)",
 }
