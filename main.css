@@ -7,7 +7,7 @@
   --links1:#aaa;
   --links2:#eee;
   --boton:#0a0a0abf;
-  --boton:#0e0e0ebf;
+  --boton2:#0e0e0ebf;
   --border2:1px solid #14211f;
 }
 
@@ -57,7 +57,7 @@ body {
 a {
   color:var(--links1);
   text-decoration:none;
-  transition:color ease .3s;
+  transition:color ease .3s, background ease .3s;
   &:hover {
     color:var(--links2);
   }
@@ -79,8 +79,11 @@ button {
   font-size:.7rem;
   text-transform:uppercase;
   cursor:pointer;
+  color:var(--links1);
+  transition:color ease .3s, background ease .3s;
   &:hover {
     background:var(--boton2);
+    color:var(--links2);
   }
 }
 
