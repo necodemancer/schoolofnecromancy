@@ -1,16 +1,23 @@
 const quickLinks = `<ul id="quick-links">
-  <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small_title" data-i18n-title-heading="truesight_small_heading">Truesight</a></li>
-  <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small_title" data-i18n-title-heading="skinwalker_small_heading">Skinwalker</a></li>
-  <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title" data-i18n-title-heading="huntersmark_small_heading">Hunter's Mark</a></li>
+  <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small_title" data-i18n-title-heading="truesight_small_heading" data-tooltip-icon="game-icon game-icon-dead-eye">Truesight</a></li>
+  <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small_title" data-i18n-title-heading="skinwalker_small_heading" data-tooltip-icon="game-icon game-icon-body-swapping">Skinwalker</a></li>
+  <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title" data-i18n-title-heading="huntersmark_small_heading" data-tooltip-icon="game-icon game-icon-cross-mark">Hunter's Mark</a></li>
+</ul>`;
+
+const quickLinksSimple = `<ul id="quick-links">
+  <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small_title">Truesight</a></li>
+  <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small_title">Skinwalker</a></li>
+  <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title">Hunter's Mark</a></li>
 </ul>`;
 
 const sidebar = `<sidebar>
   <h2 data-i18n="sidebar_title"></h2>
-  ${quickLinks} 
+  ${quickLinksSimple} 
 </sidebar>`;
 
 const uiTemplates = {
   quickLinks: quickLinks,
+  quickLinksSimple: quickLinksSimple,
   sidebar: sidebar
 };
 
