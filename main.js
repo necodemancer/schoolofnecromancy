@@ -26,7 +26,7 @@ function changeLanguage(lang) {
       var key = $(this).data("i18n");
       $(this).text(data[key]);
     });
-    $("[data-i18n]").each(function() {
+    $("[data-i18n-title]").each(function() {
       var key = $(this).data("i18n-title");
       $(this).attr('title',data[key]);
     });
