@@ -25,7 +25,7 @@
   --truesight-normal-font:700 normal .7rem 'Roboto', 'Arial', sans-serif;
   --truesight-normal-tt:uppercase;
   --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
-  --truesight-icon-size:5rem;
+  --truesight-icon-size:3rem;
   --truesight-icon-color:var(--accent1);
 }
 
