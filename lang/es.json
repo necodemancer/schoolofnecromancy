@@ -1,9 +1,12 @@
 {
   "description": "Códigos para tu foro de rol",
+  "truesight_description": "Sistema de Tooltips Personalizables<br/>¡Con opción para poner imágenes, títulos e iconos!",
   "truesight_small_heading": "Sistema de Tooltips Personalizables",
   "truesight_small_title": "¡Lo estás viendo en uso ahora mismo!",
+  "skinwalker_description": "Sistema de Cambia Cuentas<br/>Con confirmación de contraseña (¡por seguridad!) y guardado de avatar, color de grupo, nombre y rango.",
   "skinwalker_small_heading": "Sistema de Cambia Cuentas",
   "skinwalker_small_title": "Con confirmación de contraseña (¡por seguridad!) y guardado de avatar, color de grupo, nombre y rango.",
+  "huntersmark_description": "Sistema de Etiquetado de Temas<br/>¡Incluye una página HTML de búsqueda personalizada!",
   "huntersmark_small_heading": "Sistema de Etiquetado de Temas",
   "huntersmark_small_title": "¡Incluye una página HTML de búsqueda personalizada!",
   "theme_switch": "Cambiar tema",
