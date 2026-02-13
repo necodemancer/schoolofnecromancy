@@ -1,10 +1,21 @@
 $(function(){
-$('body').prepend('<button class="lang-switch" data-lang="es">Español</button><button class="lang-switch" data-lang="en">English</button>');
+$('body').prepend('<div id="lang-switchers"><button class="lang-switch" data-lang="es">Español</button><button class="lang-switch" data-lang="en">English</button></div>');
+$('body').prepend('<button class="theme-switch" data-i18n="theme_switch"></button>');
 
-// Event listener for buttons
 $(".lang-switch").click(function() {
-  const lang = $(this).data("lang");
+  var lang = $(this).data("lang");
   changeLanguage(lang);
+});
+
+$(".theme-switch").click(function() {
+  var savedTheme = localStorage.getItem("selectedTheme");
+  if (savedTheme === 'dark') {
+    $('html').addClass('light').removeClass('dark');
+    localStorage.setItem("selectedTheme", "light");
+  } else {
+    $('html').addClass('dark').removeClass('light');
+    localStorage.setItem("selectedTheme", "dark");
+  }
 });
 
 });
@@ -12,7 +23,7 @@ $(".lang-switch").click(function() {
 function changeLanguage(lang) {
   $.getJSON(`lang/${lang}.json`, function(data) {
     $("[data-i18n]").each(function() {
-      const key = $(this).data("i18n");
+      var key = $(this).data("i18n");
       $(this).text(data[key]);
     });
     localStorage.setItem("selectedLang", lang);
@@ -21,6 +32,8 @@ function changeLanguage(lang) {
 }
 
 $(document).ready(function() {
-  const savedLang = localStorage.getItem("selectedLang") || "es";
+  var savedLang = localStorage.getItem("selectedLang") || "es";
   changeLanguage(savedLang);
+  var savedTheme = localStorage.getItem("selectedTheme") || "dark";
+  $('html').removeClass('dark light').addClass(localStorage.getItem("selectedTheme"));
 });
