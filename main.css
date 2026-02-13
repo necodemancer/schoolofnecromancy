@@ -186,7 +186,7 @@ body:has(sidebar):has(main) {
     border-radius:.5rem;
     height:fit-content;
     position:sticky;
-    top:2rem;
+    top:3rem;
     & > h2 {
       margin:0;
       font:700 .8rem 'Georgia', serif;
