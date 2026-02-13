@@ -1,7 +1,7 @@
 const quickLinks = `<ul id="quick-links">
-  <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small">Truesight</a></li>
-  <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small">Skinwalker</a></li>
-  <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small">Hunter's Mark</a></li>
+  <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small_title" data-i18n-title-heading="truesight_small_heading">Truesight</a></li>
+  <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small_title" data-i18n-title-heading="skinwalker_small_heading">Skinwalker</a></li>
+  <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title" data-i18n-title-heading="huntersmark_small_heading">Hunter's Mark</a></li>
 </ul>`;
 
 const sidebar = `<sidebar>
@@ -46,6 +46,10 @@ function changeLanguage(lang) {
     $("[data-i18n-title]").each(function() {
       var key = $(this).data("i18n-title");
       $(this).attr('title',data[key]);
+    });
+    $("[data-i18n-title-heading]").each(function() {
+      var key = $(this).data("i18n-title-heading");
+      $(this).attr('data-tooltip-head',data[key]);
     });
     localStorage.setItem("selectedLang", lang);
     $('body').attr('lang', localStorage.getItem("selectedLang"));
