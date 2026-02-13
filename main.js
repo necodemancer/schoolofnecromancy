@@ -24,7 +24,7 @@ $(".theme-switch").click(function() {
 });
 
 function changeLanguage(lang) {
-  $.getJSON(`lang/${lang}.json`, function(data) {
+  $.getJSON(`/schoolofnecromancy/lang/${lang}.json`, function(data) {
     $("[data-i18n]").each(function() {
       var key = $(this).data("i18n");
       $(this).html(data[key]);
