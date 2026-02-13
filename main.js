@@ -27,9 +27,12 @@ $('body').prepend('<div id="lang-switchers"><button class="lang-switch" data-lan
 $('body').prepend('<button class="theme-switch" data-i18n="theme_switch"></button>');
 
 $(".lang-switch").click(function() {
-  var lang = $(this).data("lang");
-  localStorage.setItem("selectedLang", lang);
-  location.reload();
+  var currentLang = localStorage.getItem("selectedLang");
+  var newLang = $(this).data("lang");
+  if (currentLang !== newLang) {
+    localStorage.setItem("selectedLang", newLang);
+    location.reload();
+  }
 });
 
 $(".theme-switch").click(function() {
