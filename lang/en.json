@@ -3,5 +3,6 @@
   "truesight_small": "(Custom Tooltip System)",
   "skinwalker_small": "(Account Switcher System)",
   "huntersmark_small": "(Thread Tagging System)",
-  "theme_switch": "Change theme"
+  "theme_switch": "Change theme",
+  "sidebar_title": "Quick Links"
 }
