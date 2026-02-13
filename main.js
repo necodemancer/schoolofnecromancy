@@ -29,6 +29,7 @@ $('body').prepend('<button class="theme-switch" data-i18n="theme_switch"></butto
 $(".lang-switch").click(function() {
   var lang = $(this).data("lang");
   changeLanguage(lang);
+  location.reload();
 });
 
 $(".theme-switch").click(function() {
@@ -60,7 +61,6 @@ function changeLanguage(lang) {
     });
     localStorage.setItem("selectedLang", lang);
     $('body').attr('lang', localStorage.getItem("selectedLang"));
-    $("[title], [data-tooltip-head], [data-tooltip-image], [data-tooltip-icon]").truesight();
   });
 }
 
