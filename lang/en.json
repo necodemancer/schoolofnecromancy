@@ -1,8 +1,11 @@
 {
   "description": "Codes for your rpg forum",
-  "truesight_small": "(Custom Tooltip System)",
-  "skinwalker_small": "(Account Switcher System)",
-  "huntersmark_small": "(Thread Tagging System)",
+  "truesight_small_heading": "Custom Tooltip System",
+  "truesight_small_title": "You're seeing it in use right now!",
+  "skinwalker_small_heading": "Account Switcher System",
+  "skinwalker_small_title": "With password confirmation (for safety!) and storing of avatar, groupcolor, name and rank",
+  "huntersmark_small_heading": "Thread Tagging System",
+  "huntersmark_small_title": "Including a custom HTML search page!",
   "theme_switch": "Change theme",
   "sidebar_title": "Quick Links"
 }
