@@ -11,5 +11,7 @@
   "huntersmark_small_heading": "Sistema de Etiquetado de Temas",
   "huntersmark_small_title": "¡Incluye una página HTML de búsqueda personalizada!",
   "theme_switch": "Cambiar tema",
-  "sidebar_title": "Links Rápidos"
+  "sidebar_title": "Links Rápidos",
+  "page_not_found": "Página no encontrada",
+  "page_not_found_desc": "¡Visita alguna de estas otras páginas en su lugar!"
 }
