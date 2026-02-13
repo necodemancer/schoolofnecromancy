@@ -120,6 +120,7 @@ body.index-page {
       font-weight:700;
       font-size:.75rem;
       text-transform:uppercase;
+      transition:background ease .3s;
       &:hover {
         background:var(--boton2);
       }
