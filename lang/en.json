@@ -2,5 +2,6 @@
   "description": "Codes for your rpg forum",
   "truesight_small": "(Custom Tooltip System)",
   "skinwalker_small": "(Account Switcher System)",
-  "huntersmark_small": "(Thread Tagging System)"
+  "huntersmark_small": "(Thread Tagging System)",
+  "theme_switch": "Change theme"
 }
