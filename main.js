@@ -60,6 +60,7 @@ function changeLanguage(lang) {
     });
     localStorage.setItem("selectedLang", lang);
     $('body').attr('lang', localStorage.getItem("selectedLang"));
+    $("[title], [data-tooltip-head], [data-tooltip-image], [data-tooltip-icon]").truesight();
   });
 }
 
