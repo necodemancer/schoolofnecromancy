@@ -24,7 +24,7 @@ function changeLanguage(lang) {
   $.getJSON(`lang/${lang}.json`, function(data) {
     $("[data-i18n]").each(function() {
       var key = $(this).data("i18n");
-      $(this).text(data[key]);
+      $(this).html(data[key]);
     });
     $("[data-i18n-title]").each(function() {
       var key = $(this).data("i18n-title");
