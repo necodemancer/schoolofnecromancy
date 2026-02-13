@@ -28,7 +28,7 @@ $('body').prepend('<button class="theme-switch" data-i18n="theme_switch"></butto
 
 $(".lang-switch").click(function() {
   var lang = $(this).data("lang");
-  changeLanguage(lang);
+  localStorage.setItem("selectedLang", lang);
   location.reload();
 });
 
