@@ -9,6 +9,24 @@
   --boton:#0a0a0abf;
   --boton2:#0e0e0ebf;
   --border2:1px solid #14211f;
+  /*TRUESIGHT - TOOLTIPS*/
+  --truesight:#0a0a0a;
+  --truesight-w:clamp(10rem, 40dvw, 40rem);
+  --truesight-padding:1rem;
+  --truesight-gap: 0 1rem;
+  --truesight-border:var(--border2);
+  --truesight-radius:0px;
+  --truesight-font:400 normal .8rem 'Roboto', 'Arial', sans-serif;
+  --truesight-color:inherit;
+  --truesight-head-font:700 normal 1.1rem 'Georgia', serif;
+  --truesight-head-font-tt:uppercase;
+  --truesight-head-color:#bbb;
+  --truesight-normal-color:inherit;
+  --truesight-normal-font:700 normal .7rem 'Roboto', 'Arial', sans-serif;
+  --truesight-normal-tt:uppercase;
+  --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
+  --truesight-icon-size:5rem;
+  --truesight-icon-color:var(--accent1);
 }
 
 .light {
@@ -22,6 +40,24 @@
   --boton:#eeeeeebf;
   --boton2:#f2f2f2bf;
   --border2:1px solid #14211f;
+  /*TRUESIGHT - TOOLTIPS*/
+  --truesight:#eeeeee;
+  --truesight-w:clamp(10rem, 40dvw, 40rem);
+  --truesight-padding:1rem;
+  --truesight-gap: 0 1rem;
+  --truesight-border:var(--border2);
+  --truesight-radius:0px;
+  --truesight-font:400 normal .8rem 'Roboto', 'Arial', sans-serif;
+  --truesight-color:inherit;
+  --truesight-head-font:700 normal 1.1rem 'Georgia', serif;
+  --truesight-head-font-tt:uppercase;
+  --truesight-head-color:#222;
+  --truesight-normal-color:inherit;
+  --truesight-normal-font:700 normal .7rem 'Roboto', 'Arial', sans-serif;
+  --truesight-normal-tt:uppercase;
+  --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
+  --truesight-icon-size:5rem;
+  --truesight-icon-color:var(--accent1);
 }
 
 html, body {
