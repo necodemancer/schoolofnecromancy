@@ -11,5 +11,7 @@
   "huntersmark_small_heading": "Thread Tagging System",
   "huntersmark_small_title": "Including a custom HTML search page!",
   "theme_switch": "Change theme",
-  "sidebar_title": "Quick Links"
+  "sidebar_title": "Quick Links",
+  "page_not_found": "Page not found",
+  "page_not_found_desc": "Try with some of these pages instead!"
 }
