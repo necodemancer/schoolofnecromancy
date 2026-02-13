@@ -27,9 +27,12 @@
       'image text';
     & .ts-head {
       align-self:flex-end;
+      justify-self:flex-start;
+      text-align:left;
     }
     & .ts-text {
       align-self:flex-start;
+      justify-self:flex-start;
     }
   }
   &:has(.ts-image):has(.ts-head):not(:has(.ts-text)) > div {
