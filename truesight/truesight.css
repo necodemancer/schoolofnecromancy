@@ -112,6 +112,7 @@
   & em {
     font-size:var(--truesight-icon-size);
     color:var(--truesight-icon-color);
+    line-height:1;
   }
   &:has(em) {
     display:flex;
