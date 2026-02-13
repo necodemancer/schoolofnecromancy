@@ -5,6 +5,7 @@ const quickLinks = `<ul id="quick-links">
 </ul>`;
 
 const quickLinksSimple = `<ul id="quick-links">
+  <li><a href="/schoolofnecromancy/" data-i18n="index_small_title"></a></li>
   <li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small_title">Truesight</a></li>
   <li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small_title">Skinwalker</a></li>
   <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title">Hunter's Mark</a></li>
