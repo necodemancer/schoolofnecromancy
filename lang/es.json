@@ -3,6 +3,12 @@
   "truesight_small": "(Sistema de Tooltips Personalizables)",
   "skinwalker_small": "(Sistema de Cambia Cuentas)",
   "huntersmark_small": "(Sistema de Etiquetado de Temas)",
+  "truesight_small_heading": "Sistema de Tooltips Personalizables",
+  "truesight_small_title": "¡Lo estás viendo en uso ahora mismo!",
+  "skinwalker_small_heading": "Sistema de Cambia Cuentas",
+  "skinwalker_small_title": "Con confirmación de contraseña (¡por seguridad!) y guardado de avatar, color de grupo, nombre y rango.",
+  "huntersmark_small_heading": "Sistema de Etiquetado de Temas",
+  "huntersmark_small_title": "¡Incluye una página HTML de búsqueda personalizada!",
   "theme_switch": "Cambiar tema",
   "sidebar_title": "Links Rápidos"
 }
