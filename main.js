@@ -1,6 +1,8 @@
 $(function(){
-const quickLinks = '<ul id="quick-links"><li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small">Truesight</a></li><li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small">Skinwalker</a></li><li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small">Hunter\'s Mark</i></a></li></ul>';
-const sidebar = '<sidebar><h2 data-i18n="sidebar_title"></h2>'+quickLinks+'</sidebar>';
+const uiTemplates = {
+quickLinks: '<ul id="quick-links"><li><a href="/schoolofnecromancy/truesight" data-i18n-title="truesight_small">Truesight</a></li><li><a href="/schoolofnecromancy/skinwalker" data-i18n-title="skinwalker_small">Skinwalker</a></li><li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small">Hunter\'s Mark</i></a></li></ul>',
+sidebar: '<sidebar><h2 data-i18n="sidebar_title"></h2>'+quickLinks+'</sidebar>',
+};
 
 $('body').prepend('<div id="lang-switchers"><button class="lang-switch" data-lang="es">Español</button><button class="lang-switch" data-lang="en">English</button></div>');
 $('body').prepend('<button class="theme-switch" data-i18n="theme_switch"></button>');
@@ -40,9 +42,13 @@ function changeLanguage(lang) {
 
 $(document).ready(function() {
 
-  $('replaceWith').each(function(){
+  $('replaceWith').each(function() {
     var varName = $(this).attr('data-var');
-    $(this).replaceWith(varName);
+    if (uiTemplates[varName]) {
+      $(this).replaceWith(uiTemplates[varName]);
+    } else {
+      console.warn("No template found for:", varName);
+    }
   });
 
   var savedLang = localStorage.getItem("selectedLang") || "es";
