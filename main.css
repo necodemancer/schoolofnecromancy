@@ -114,6 +114,10 @@ code {
   }
 }
 
+ul+br {
+  display:none;
+}
+
 button {
   background:var(--boton);
   border:var(--border2);
