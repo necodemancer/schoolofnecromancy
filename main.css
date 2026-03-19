@@ -85,7 +85,7 @@ body {
 
 a {
   color:var(--links1);
-  text-decoration:none;
+  text-decoration-color:var(--accent1);
   transition:color ease .3s, background ease .3s;
   &:hover {
     color:var(--links2);
