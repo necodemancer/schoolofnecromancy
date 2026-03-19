@@ -95,6 +95,24 @@ h1 {
   text-transform:uppercase;
 }
 
+h2 {
+  margin-top:1rem;
+  margin-bottom:.5rem;
+  font:500 1.5rem 'Georgia', serif;
+  text-transform:uppercase;
+}
+
+code {
+  font-size:.8rem;
+  font-family:'Courier New', monospace;
+  color:color-mix(in srgb, var(--text) 75%, var(--b));
+  &:not([data-inline]) {
+    padding: .5em 1em;
+    display: block;
+    border-left: 2px solid var(--accent2);
+  }
+}
+
 button {
   background:var(--boton);
   border:var(--border2);
