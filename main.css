@@ -119,6 +119,17 @@ code {
   }
 }
 
+.gallery {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 1rem;
+  place-content: center;
+  align-items: center;
+}
+
 ul+br {
   display:none;
 }
