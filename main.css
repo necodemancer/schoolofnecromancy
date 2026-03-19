@@ -4,6 +4,7 @@
   --accent1:#1b524b;
   --accent2:#0b3f38;
   --b-size:500%;
+  --text:#888;
   --links1:#aaa;
   --links2:#eee;
   --boton:#0a0a0abf;
@@ -35,6 +36,7 @@
   --accent1:#1b524b;
   --accent2:#0b3f38;
   --b-size:200%;
+  --text:#555;
   --links1:#333;
   --links2:#111;
   --boton:#eeeeeebf;
@@ -49,6 +51,7 @@ html, body {
   min-height:100dvh;
   font-size:16px;
   font-family:'Roboto', 'Arial', sans-serif;
+  color:var(--text);
 }
 
 body {
