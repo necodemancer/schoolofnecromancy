@@ -21,13 +21,13 @@
   --truesight-color:inherit;
   --truesight-head-font:700 normal .9rem 'Georgia', serif;
   --truesight-head-font-tt:uppercase;
-  --truesight-head-color:var(--group, #bbb);
+  --truesight-head-color:#bbb;
   --truesight-normal-color:inherit;
   --truesight-normal-font:700 normal .7rem 'Roboto', 'Arial', sans-serif;
   --truesight-normal-tt:uppercase;
   --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
   --truesight-icon-size:3rem;
-  --truesight-icon-color:var(--group, var(--accent1));
+  --truesight-icon-color:var(--accent1);
 }
 
 .light {
