@@ -106,6 +106,7 @@ code {
   font-size:.8rem;
   font-family:'Courier New', monospace;
   color:color-mix(in srgb, var(--text) 75%, var(--b));
+  margin-block:.3rem;
   &:not([data-inline]) {
     padding: .5em 1em;
     display: block;
