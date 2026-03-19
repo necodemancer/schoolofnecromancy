@@ -69,7 +69,6 @@ $(function () {
 
 			const computed = getComputedStyle($el[0]);
 			let styling = computed.getPropertyValue("--group")?.trim() || null;
-			let stylingLight = computed.getPropertyValue("--group-light")?.trim() || styling;
 
 			const container = $("<div>");
 
@@ -96,7 +95,7 @@ $(function () {
 			if (styling) {
 				container.attr(
 					"style",
-					`--group:${styling};--group-light:${stylingLight};`
+					`--group:${styling};`
 				);
 			}
 
