@@ -62,35 +62,46 @@ $(function () {
         },
 
         buildContent($el) {
-            const title = $el.data("ts-title") || $el.attr("title");
-            const head = $el.data("tooltip-head");
-            const image = $el.data("tooltip-image");
-            const icon = $el.data("tooltip-icon");
+			const title = $el.data("ts-title") || $el.attr("title");
+			const head = $el.data("tooltip-head");
+			const image = $el.data("tooltip-image");
+			const icon = $el.data("tooltip-icon");
 
-            const container = $("<div>");
+			const computed = getComputedStyle($el[0]);
+			let styling = computed.getPropertyValue("--group")?.trim() || null;
+			let stylingLight = computed.getPropertyValue("--group-light")?.trim() || styling;
 
-            if (image) {
-                $("<div>", { class: "ts-image" })
-                    .append($("<img>", { src: image, alt: "" }))
-                    .appendTo(container);
-            }
+			const container = $("<div>");
 
-            if (icon) {
-                $("<div>", { class: "ts-image" })
-                    .append($("<em>", { class: icon }))
-                    .appendTo(container);
-            }
+			if (image) {
+				$("<div>", { class: "ts-image" })
+					.append($("<img>", { src: image, alt: "" }))
+					.appendTo(container);
+			}
 
-            if (head) {
-                $("<div>", { class: "ts-head", text: head }).appendTo(container);
-            }
+			if (icon) {
+				$("<div>", { class: "ts-image" })
+					.append($("<em>", { class: icon }))
+					.appendTo(container);
+			}
 
-            if (title) {
-                $("<div>", { class: "ts-text", text: title }).appendTo(container);
-            }
+			if (head) {
+				$("<div>", { class: "ts-head", text: head }).appendTo(container);
+			}
 
-            return container;
-        },
+			if (title) {
+				$("<div>", { class: "ts-text", text: title }).appendTo(container);
+			}
+
+			if (styling) {
+				container.attr(
+					"style",
+					`--group:${styling};--group-light:${stylingLight};`
+				);
+			}
+
+			return container;
+		},
 
         show($el, event) {
 
