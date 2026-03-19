@@ -18,6 +18,11 @@
     place-content:flex-start;
     gap: var(--truesight-gap);
     width:stretch;
+    &[style^="--group:"] {
+      --truesight-icon-color:var(--group);
+      --truesight-head-color:var(--group);
+      --truesight-color:var(--group);
+    }
   }
   &:has(.ts-image):has(.ts-head):has(.ts-text) > div {
     grid-template-columns:max-content 1fr;
