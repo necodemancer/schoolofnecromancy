@@ -14,5 +14,11 @@
   "sidebar_title": "Links Rápidos",
   "page_not_found": "Página no encontrada",
   "page_not_found_desc": "¡Visita alguna de estas otras páginas en su lugar!",
-  "coming_soon": "Próximamente."
+  "coming_soon": "Próximamente.",
+  "truesight_about_title":"¿Qué es Truesight?",
+  "truesight_about_content":"Truesight es un sistema de tooltips personalizable en jQuery que permite mostrar:<br/><ul><li><b>Texto:</b> Usando el atributo <code>title</code>.</li><li><b>Encabezado:</b> Usando el atributo <code>data-tooltip-head</code>.</li><li><b>Imagen:</b> Usando el atributo <code>data-tooltip-image</code>.</li><li><b>Icono:</b> Usando el atributo <code>data-tooltip-icon</code>.</li></ul><br/>Este tooltip es funcional para cualquier elemento que contenga alguno de estos atributos en su cuerpo.",
+  "truesight_install_title":"Instalación de Truesight",
+  "truesight_install_content":"Incluye jQuery y tu script <b>truesight.js</b>. Por defecto, tu foro debería tener un link de jQuery ya injertado en tu overall_header a menos que lo hayas retirado. Puedes usar truesight.js de dos maneras diferentes:<br/><ul><li><b>Instalación directa:</b> Incluye el contenido de truesight.js en una hoja nueva de JS en tu Panel de Administración.</li><li><b>Instalación externa:</b> Sube truesight.js a tu dropbox o github, y vincúlalo en tu overall_header con <code>&lt;script src=\"truesight.js\"&gt;&lt;/script&gt;</code>.</li></ul>",
+  "truesight_examples_title": "Ejemplos de uso",
+  "truesight_examples_content": "<span title=\"Texto del tooltip\">Tooltip sencillo.</span><br/><code>&lt;span title=\"Texto del tooltip\"&gt;Tooltip sencillo.&lt;/span&gt;</code><br/><br/><span data-tooltip-head=\"Header del tooltip\" title=\"Texto del tooltip\">Tooltip sencillo.</span><br/><code>&lt;span data-tooltip-head=\"Header del tooltip\" title=\"Texto del tooltip\"&gt;Tooltip sencillo.&lt;/span&gt;</code>",
 }
