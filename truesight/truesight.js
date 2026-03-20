@@ -63,7 +63,7 @@ $(function () {
         },
 
         buildContent($el) {
-			const title = $el.data("ts-title") || $el.attr("title");
+			const title = $el.attr("title");
 			const head = $el.data("tooltip-head");
 			const image = $el.data("tooltip-image");
 			const icon = $el.data("tooltip-icon");
