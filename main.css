@@ -192,6 +192,7 @@ body.index-page {
       & a {
         padding:.75em;
         display:block;
+        text-decoration:none;
       }
     }
   }
@@ -240,6 +241,7 @@ body.notfound-page {
       & a {
         padding:.75em;
         display:block;
+        text-decoration:none;
       }
     }
   }
