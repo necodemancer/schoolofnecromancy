@@ -4,6 +4,7 @@ const quickLinks = `<ul id="quick-links">
   <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title" data-i18n-title-heading="huntersmark_small_heading" data-tooltip-icon="game-icon game-icon-cross-mark">Hunter's Mark</a></li>
   <li><a href="/schoolofnecromancy/scrying" data-i18n-title="scrying_small_title" data-i18n-title-heading="scrying_small_heading" data-tooltip-icon="game-icon game-icon-crystal-ball">Scrying</a></li>
   <li><a href="/schoolofnecromancy/sanctuary" data-i18n-title="sanctuary_small_title" data-i18n-title-heading="sanctuary_small_heading" data-tooltip-icon="game-icon game-icon-rosa-shield">Sanctuary</a></li>
+  <li><a href="/schoolofnecromancy/luckstone" data-i18n-title="luckstone_small_title" data-i18n-title-heading="luckstone_small_heading" data-tooltip-icon="game-icon game-icon-rune-stone">Luckstone</a></li>
 </ul>`;
 
 const quickLinksSimple = `<ul id="quick-links">
@@ -13,6 +14,7 @@ const quickLinksSimple = `<ul id="quick-links">
   <li><a href="/schoolofnecromancy/huntersmark" data-i18n-title="huntersmark_small_title">Hunter's Mark</a></li>
   <li><a href="/schoolofnecromancy/scrying" data-i18n-title="scrying_small_title">Scrying</a></li>
   <li><a href="/schoolofnecromancy/sanctuary" data-i18n-title="sanctuary_small_title">Sanctuary</a></li>
+  <li><a href="/schoolofnecromancy/luckstone" data-i18n-title="luckstone_small_title">Luckstone</a></li>
 </ul>`;
 
 const sidebar = `<sidebar>
