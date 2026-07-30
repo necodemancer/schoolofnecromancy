@@ -19,6 +19,9 @@
   --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
   --truesight-icon-size:3rem;
   --truesight-icon-color:#1b524b;
+  --truesight-important:color-mix(in srgb, #1b524b, var(--truesight));
+  --truesight-important-border:1px solid rgba(255,255,255,0.1);
+  --truesight-important-color:var(--truesight-head-color);
 }
 
 #truesight {
@@ -154,8 +157,14 @@
   grid-area:text;
 }
 
-#truesight > div[style*="--group:"] * {
+#truesight[style*="--group:"]:not(.important) * {
 --truesight-head-color:var(--group);
 --truesight-normal-color:var(--group);
 --truesight-icon-color:var(--group);
+}
+
+#truesight[style*="--group:"].important, #truesight[style*="--group:"].important * {
+--truesight-important:var(--group);
+--truesight-important-border:1px solid rgba(255,255,255,0.1);
+--truesight-important-color:var(--subtitle);
 }
