@@ -92,6 +92,13 @@
     grid-template-areas:
       'image';
   }
+  &.important {
+    background:var(--truesight-important);
+    outline:var(--truesight-important-border);
+    outline-offset:-1px;
+    border:0;
+    color: var(--truesight-important-color);
+  }
 }
 
 .ts-head {
