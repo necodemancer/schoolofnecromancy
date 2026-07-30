@@ -1,6 +1,7 @@
 /* ==========================================================================
    Truesight - Custom Tooltip System
    Author: Necromancer Coding
+   Version: 1.2 // Group Colors Vr.
    ========================================================================== */
 
 $(function () {
