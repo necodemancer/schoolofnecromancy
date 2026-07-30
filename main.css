@@ -28,6 +28,9 @@
   --truesight-img-max-w:clamp(5rem, 15dvw, 30rem);
   --truesight-icon-size:3rem;
   --truesight-icon-color:var(--accent1);
+  --truesight-important:color-mix(in srgb, var(--accent1), var(--truesight));
+  --truesight-important-border:1px solid rgba(255,255,255,0.1);
+  --truesight-important-color:var(--truesight-head-color);
 }
 
 .light {
