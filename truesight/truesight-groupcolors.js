@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Truesight - Custom Tooltip System (Group Color Variant)
+   Truesight - Custom Tooltip System
    Author: Necromancer Coding
    ========================================================================== */
 
@@ -92,36 +92,46 @@ $(function () {
 				$("<div>", { class: "ts-text", text: title }).appendTo(container);
 			}
 
-			if (styling) {
-				container.attr(
-					"style",
-					`--group:${styling};`
-				);
-			}
-
-			return container;
+			return {
+				content: container,
+				styling,
+				important: $el.is("[data-tooltip-important]")
+			};
 		},
 
         show($el, event) {
 
+			const data = this.buildContent($el);
 			const title = $el.attr("title");
 			const head = $el.data("tooltip-head");
 			const image = $el.data("tooltip-image");
 			const icon = $el.data("tooltip-icon");
 
-			// Stop only if absolutely nothing exists
 			if (!title && !head && !image && !icon) return;
 
 			if (title) {
 				$el.data("ts-title", title).attr("title", "");
 			}
-
-			const content = this.buildContent($el);
+			
+			this.tooltip[0].style.removeProperty("--group");
 
 			this.tooltip
-				.empty()
-				.append(content)
-				.css({ opacity: 0, display: "block" });
+			.removeClass("important")
+			.css({
+				opacity: 0,
+				display: "block"
+			})
+			.empty()
+			.append(data.content);
+			
+			if (data.important) {
+				this.tooltip.addClass("important");
+			}
+
+			if (data.styling) {
+				const tooltip = this.tooltip[0];
+				tooltip.style.setProperty("--group", data.styling);
+			}
 
 			const self = this;
 
