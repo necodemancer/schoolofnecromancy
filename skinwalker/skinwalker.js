@@ -1,6 +1,7 @@
 /* ==========================================================================
    Skinwalker - Account Switcher System for phpBB3 Forumotion
    Author: Necromancer Coding
+   Version: 1.0
    ========================================================================== */
 
 const siglas = 'NOMBRE_FORO';
